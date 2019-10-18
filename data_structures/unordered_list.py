@@ -21,7 +21,7 @@ class UnorderedList:
         self.head = None # setting the head (it is none right now)
 
     def add_item(self,new_item): # adding a new node 
-        temp = new_item  #creates new node
+        temp = Node(new_item)  #creates new node
         temp.set_next(self.head) #sets new node to point to next( which is the very end)
         self.head = temp  # sets the new item (called temp)  to the head level
 

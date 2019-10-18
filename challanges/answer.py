@@ -10,7 +10,7 @@ access_list.pop()
 modified_employees = []  # createing a blank list
 for row in employees:  # for every row in the employees file
     info = row.split(',') # this is seperateing the entries at the ","
-    modified_employees.append(info[4])
+    modified_employees.append(info[3])
 
 modified_access_list = []  # createing a blank list
 for row in employees:  # for every row in the access file
@@ -21,7 +21,7 @@ unauthorized = []  # creating a list for just the unautghorized ones
 for ip in modified_access_list:
     if ip not in modified_employees:
         unauthorized.append(ip)
-print(len(unauthorized))
+print(unauthorized)
 
 
 
