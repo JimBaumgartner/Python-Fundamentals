@@ -8,19 +8,19 @@
 # to verify: terminal should hace the virt-env on the left #  (my_super_cool_enviroment) PS C:\Users\JimRB\Desktop\Python October\workspace\PythonFundamentals>
 # pip install requests
 
-# import requests
+import requests
 
-# response = requests.get("https://api.spacexdata.com/v3/rockets")
+response = requests.get("https://api.spacexdata.com/v3/rockets")
 
-# print(response)  # prints code ie error code 404 or 200
+print(response)  # prints code ie error code 404 or 200
 
-# data = response.json() 
-# # print(data) 
-# for entry in data:
-#     # print(entry.keys(),"\n")
-#     print(entry['rocket_name'], "\n")
+data = response.json() 
+# print(data) 
+for entry in data:
+    # print(entry.keys(),"\n")
+    print(entry['rocket_name'], "\n")
 
-    # https://rickandmortyapi.com/api/character/2
+    https://rickandmortyapi.com/api/character/2
 
 import pprint
 
@@ -65,16 +65,11 @@ chosen_one = chosen.json()
 print(chosen.headers)
 print(chosen_one['name'])
 
-
-
-
-
 # data = character_response.json() 
 # # print(data.keys() ,"\n") #this tells you all the dictionary keys avaliable at that level
 # print(data['name'], "\n") # prints just the 'name' for that api character 2
 # print(data['episode'], "\n")
 # # print(data.values() ,"\n") 
-
 
 #have no idea why you would want a for loop here
 # for entry in data:

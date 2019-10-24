@@ -21,39 +21,39 @@ product = {
 
 print(product["price"])
 
-# location = (product["aisle"],product["shelf"])
+location = (product["aisle"],product["shelf"])
 
 
-# print(product.get("quantity")) # this is safe and will return "none" if the key word is not there
+print(product.get("quantity")) # this is safe and will return "none" if the key word is not there
 
-# # you can directly change things in a dictonary
-# product["aisle"] = 4  
-# product["aisle"] += 1
-# product["dept"] = "Guy's Gocery games"
+# you can directly change things in a dictonary
+product["aisle"] = 4  
+product["aisle"] += 1
+product["dept"] = "Guy's Gocery games"
 
-# for value in product:  # prints all keys
-#     print(value)
+for value in product:  # prints all keys
+    print(value)
 
-# for value in product:  # prints all values in dictonary
-#     print(product[value]) 
-
-
-# print(product.values()) # will print a list of the values
-# print(product.keys()) # will print a list of the values
-
-# product.update({"whatever": 123456}) # this will add to the dictonary
-
-# you={}
-
-# data = [ ("name", "JimBo"),("age", 40), ("class", "Python")]
+for value in product:  # prints all values in dictonary
+    print(product[value]) 
 
 
-# for a , b in data:
-#     you.update({a: b})
-#     print(you.values(),you.keys()) # will print a list of the values
+print(product.values()) # will print a list of the values
+print(product.keys()) # will print a list of the values
+
+product.update({"whatever": 123456}) # this will add to the dictonary
+
+you={}
+
+data = [ ("name", "JimBo"),("age", 40), ("class", "Python")]
+
+
+for a , b in data:
+    you.update({a: b})
+    print(you.values(),you.keys()) # will print a list of the values
   
 
-#   # best way to add info to a dictionay super slick
+  # best way to add info to a dictionay super slick
 
-#     you.update(data)
-#     print(you)
+    you.update(data)
+    print(you)

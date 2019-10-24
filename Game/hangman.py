@@ -6,7 +6,7 @@ from hangman_images import   hangman2
 from hangman_images import   hangman3
 from hangman_images import   hangman4
 
-answer_list = ['DOG','CAT', 'COW', 'ALIGATOR' 'BIRD']  # list of answer 
+answer_list = ['DOG','CAT', 'COW', 'ALIGATOR',  'BIRD']  # list of answer 
 bad_names = ['Pumpkin Spice', 'Cup Cake', ' Fart Breath', 'Dummy']  # list of insulting names
 display = []  #createing a blank list 
 used_letters = [] #createing a blank list  for all of the guesses
